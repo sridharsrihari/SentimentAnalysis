@@ -1,0 +1,15 @@
+﻿Build started 4/24/2016 8:11:14 PM.
+     1>Project "C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\ServerClient\ServerClient.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.8.0\build\native\include" /I\include /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\ServerClient.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt /d2notypeopt ServerClient.cpp
+         ServerClient.cpp
+     1>c:\users\sri\documents\visual studio 2015\projects\serverclient\serverclient\serverclient.cpp(136): warning C4102: 'std': unreferenced label
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\Debug\ServerClient.exe" /INCREMENTAL /NOLOGO /LIBPATH:\lib\x86\Release\ /LIBPATH:\lib\x86\Debug\ "C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\packages\cpprestsdk.v140.windesktop.msvcstl.dyn.rt-dyn.2.8.0\build\native\..\..\lib\native\v140\windesktop\msvcstl\dyn\rt-dyn\x86\Debug\cpprest140d_2_8.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\Debug\ServerClient.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\Debug\ServerClient.lib" /MACHINE:X86 Debug\ServerClient.obj
+         Debug\stdafx.obj
+         ServerClient.vcxproj -> C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\Debug\ServerClient.exe
+     1>Done Building Project "C:\Users\Sri\Documents\Visual Studio 2015\Projects\ServerClient\ServerClient\ServerClient.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.18

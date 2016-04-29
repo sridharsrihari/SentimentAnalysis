@@ -173,11 +173,6 @@ void handle_post_sentiment(http_request request)
 		request,
 		[](json::value & jvalue, json::value &answer)
 	{json::value v;
-	json::value tweet;
-	tweet[U("tweetid")] = json::value(U("1001"));
-	tweet[U("text")] = json::value(U("This is a test tweet."));
-	tweet[U("lat")] = json::value(U("81.88"));
-	tweet[U("lon")] = json::value(U("90.78"));
 
 	utility::string_t st = utility::conversions::to_string_t("data");
 	v[st][0][U("text")] = jvalue[U("text")];
@@ -187,6 +182,8 @@ void handle_post_sentiment(http_request request)
 	tweet_table[U("table")] = json::value(U("cplusplustweet"));
 	std::chrono::steady_clock::time_point begin = std::chrono::steady_clock::now();
 	http_client forwarder_time(U("https://tweetmap-ry2294.c9users.io/time"));
+	
+	
 	http_client forwarder(U("https://tweetmap-ry2294.c9users.io/tweet"));
 	http_request r_table;
 	r_table.set_body(tweet_table);
@@ -207,6 +204,7 @@ void handle_post_sentiment(http_request request)
 
 			answer = resp.extract_json().get();
 			//json::value tweet_table = tweet;
+			//answer = tweet_table;
 
 
 			//tweet[U("polarity")] = answer[st][0][U("polarity")];
@@ -241,6 +239,7 @@ void handle_post_sentiment(http_request request)
 	r_sentiment.set_method(methods::POST);
 	r_sentiment.headers().set_content_type(U("application/json"));
 	forwarder_time.request(r_sentiment);
+	answer = tweet_sentiment;
 
 	}).wait();
 
